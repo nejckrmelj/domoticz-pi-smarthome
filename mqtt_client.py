@@ -1,11 +1,9 @@
 import json
 import os
-import signal
 import time
-import sys
 from dotenv import load_dotenv
 import paho.mqtt.client as mqtt # type: ignore
-import RPi.GPIO as GPIO
+from gpiozero import LED
 
 # env variables
 load_dotenv()
@@ -20,13 +18,6 @@ def load_hardware():
         return json.load(file)
     
 hardware = load_hardware()
-
-GPIO.setmode(GPIO.BCM)
-
-def gpio_cleanup():
-    print("Cleaning up GPIO")
-    GPIO.cleanup()
-    
 
 def on_connect(client, userdata, flags, rc, properties):
     print(f"Connected with result code {rc}")
@@ -44,13 +35,10 @@ def on_message(client, userdata, msg):
             match data["switchType"]:
 
                 case "On/Off":
-                    gpio_pin = hardware[data["hwid"]]["gpio"]
-                    GPIO.setup(gpio_pin, GPIO.OUT)
-                    match data["nvalue"]:
-                        case 1:
-                            GPIO.output(gpio_pin, GPIO.HIGH)
-                        case 0:
-                            GPIO.output(gpio_pin, GPIO.LOW)
+                    pin = hardware[data["hwid"]]["gpio"]
+                    led = LED(pin)
+                    led.value = data["nvalue"]
+                    print(f"switching pin {pin} to {led.value}")
 
 
 def on_log(client, userdata, level, buf):
@@ -64,7 +52,7 @@ def on_disconnect(client, userdata, rc):
 mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 mqttc.on_connect = on_connect
 mqttc.on_message = on_message
-mqttc.on_log = on_log
+# mqttc.on_log = on_log
 mqttc.on_disconnect = on_disconnect
 
 mqttc.username_pw_set(mqtt_username, mqtt_password)
@@ -87,10 +75,7 @@ try:
 
 except KeyboardInterrupt:
     print("KeyboardInterrupt caught.")
-    gpio_cleanup()
 except Exception as e:
     print(f"Unhandled exception: {e}")
-    gpio_cleanup()
 finally:
-    gpio_cleanup()
     print("Exiting...")
