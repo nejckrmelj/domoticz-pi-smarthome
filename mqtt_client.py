@@ -30,8 +30,15 @@ def get_hardware():
         json = response.json()
         for device in json["result"]:
             hardware_name = device["HardwareName"]
+            status = device["Status"]
             if (device["SwitchType"] == "On/Off" and re.match(r'^GPIO \d+$', hardware_name)):
-                hardware[str(device["HardwareID"])] = {"gpio": int(hardware_name.split()[1]) }
+                pin = int(hardware_name.split()[1])
+                led = LED(pin)
+                hardware[str(device["HardwareID"])] = led
+                if (status == "On"):
+                    led.on()
+                else:
+                    led.off()  
                 
     return hardware
                 
@@ -55,10 +62,12 @@ def on_message(client, userdata, msg):
                 match data["switchType"]:
 
                     case "On/Off":
-                        pin = hardware[data["hwid"]]["gpio"]
-                        led = LED(pin)
+                        # pin = hardware[data["hwid"]]["gpio"]
+                        # led = LED(pin)
+                        # led.value = data["nvalue"]
+                        led = hardware[data["hwid"]]
                         led.value = data["nvalue"]
-                        print(f"switching pin {pin} to {led.value}")
+                        print(f"switching pin {led.pin.number} to {led.value}")
             except:
                 print("There was an error")
 
