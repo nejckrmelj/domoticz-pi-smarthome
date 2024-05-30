@@ -4,6 +4,8 @@ import time
 from dotenv import load_dotenv
 import paho.mqtt.client as mqtt # type: ignore
 from gpiozero import LED
+import requests
+import re
 
 # env variables
 load_dotenv()
@@ -11,13 +13,30 @@ mqtt_host = os.getenv("MQTT_HOST")
 mqtt_port = int(os.getenv("MQTT_PORT"))
 mqtt_username = os.getenv("MQTT_USERNAME")
 mqtt_password = os.getenv("MQTT_PASSWORD")
+domoticz_username = os.getenv("DOMOTICZ_USERNAME")
+domoticz_password = os.getenv("DOMOTICZ_PASSWORD")
+domoticz_host = os.getenv("DOMOTICZ_HOST")
+domoticz_api = f"http://{domoticz_username}:{domoticz_password}@{domoticz_host}/json.htm"
 
-# hardware dictionary for domoticz
-def load_hardware():
-    with open("hardware.json") as file:
-        return json.load(file)
-    
-hardware = load_hardware()
+# Get hardware with gpios from domoticz   
+def get_hardware():
+    print("Requesting devices from domoticz")
+    response = requests.post(domoticz_api, params={
+        "type": "command",
+        "param": "getdevices"
+    })
+    hardware = {}
+    if (response.ok):
+        json = response.json()
+        for device in json["result"]:
+            hardware_name = device["HardwareName"]
+            if (device["SwitchType"] == "On/Off" and re.match(r'^GPIO \d+$', hardware_name)):
+                hardware[str(device["HardwareID"])] = {"gpio": int(hardware_name.split()[1]) }
+                
+    return hardware
+                
+hardware = get_hardware()
+print("Used hardware: ", hardware)
 
 def on_connect(client, userdata, flags, rc, properties):
     print(f"Connected with result code {rc}")
@@ -32,13 +51,16 @@ def on_message(client, userdata, msg):
             if ("switchType" not in data):
                 return
             
-            match data["switchType"]:
+            try:
+                match data["switchType"]:
 
-                case "On/Off":
-                    pin = hardware[data["hwid"]]["gpio"]
-                    led = LED(pin)
-                    led.value = data["nvalue"]
-                    print(f"switching pin {pin} to {led.value}")
+                    case "On/Off":
+                        pin = hardware[data["hwid"]]["gpio"]
+                        led = LED(pin)
+                        led.value = data["nvalue"]
+                        print(f"switching pin {pin} to {led.value}")
+            except:
+                print("There was an error")
 
 
 def on_log(client, userdata, level, buf):
