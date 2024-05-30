@@ -1,11 +1,11 @@
 import json
 import os
 import time
+import re
 from dotenv import load_dotenv
 import paho.mqtt.client as mqtt # type: ignore
 from gpiozero import LED
 import requests
-import re
 
 # env variables
 load_dotenv()
@@ -18,16 +18,23 @@ domoticz_password = os.getenv("DOMOTICZ_PASSWORD")
 domoticz_host = os.getenv("DOMOTICZ_HOST")
 domoticz_api = f"http://{domoticz_username}:{domoticz_password}@{domoticz_host}/json.htm"
 
-# Get hardware with gpios from domoticz   
-def get_hardware():
+# Get hardware with gpios from domoticz
+hardware = {}
+
+def update_hardware():
+    global hardware
+
     print("Requesting devices from domoticz")
     response = requests.post(domoticz_api, params={
         "type": "command",
         "param": "getdevices"
     })
-    hardware = {}
     if (response.ok):
         json = response.json()
+
+        for led in hardware.values():
+            led.close()
+
         for device in json["result"]:
             hardware_name = device["HardwareName"]
             status = device["Status"]
@@ -40,9 +47,7 @@ def get_hardware():
                 else:
                     led.off()  
                 
-    return hardware
-                
-hardware = get_hardware()
+update_hardware()
 print("Used hardware: ", hardware)
 
 def on_connect(client, userdata, flags, rc, properties):
@@ -62,14 +67,21 @@ def on_message(client, userdata, msg):
                 match data["switchType"]:
 
                     case "On/Off":
-                        # pin = hardware[data["hwid"]]["gpio"]
-                        # led = LED(pin)
-                        # led.value = data["nvalue"]
-                        led = hardware[data["hwid"]]
+                        hardware_idx = data["hwid"]
+                        print(hardware_idx not in hardware)
+                        # Check if hardware gpio is initialized
+                        if (hardware_idx not in hardware):
+                            update_hardware()
+                            if (hardware_idx not in hardware):
+                                raise Exception(f"Switch with hardware idx f{hardware_idx} is missing.")
+
+                        # Switch pin state
+                        led = hardware[hardware_idx]
                         led.value = data["nvalue"]
                         print(f"switching pin {led.pin.number} to {led.value}")
-            except:
-                print("There was an error")
+
+            except Exception as e:
+                print(f"Error: {e}")
 
 
 def on_log(client, userdata, level, buf):
