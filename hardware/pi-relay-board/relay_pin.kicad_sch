@@ -1,0 +1,1626 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "4f8fd784-57d6-4b7b-8405-eca74c913452")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector:Conn_01x03_Socket"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Socket"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Socket_1_1"
+				(arc
+					(start 0 -2.032)
+					(mid -0.5058 -2.54)
+					(end 0 -3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0.508)
+					(mid -0.5058 0)
+					(end 0 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 3.048)
+					(mid -0.5058 2.54)
+					(end 0 2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Relay:TIANBO-HJR-4102-L"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 11.43 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TIANBO-HJR-4102-L"
+				(at 11.43 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_SPDT_HJR-4102"
+				(at 27.94 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-reichelt.de/documents/datenblatt/C300/DS_HJR4102E.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "TIANBO HJR-4102-L, Single Pole Relay, 5mm Pitch, 3A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Pole Relay"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Relay*HJR?4102*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TIANBO-HJR-4102-L_0_0"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TIANBO-HJR-4102-L_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -1.905) (xy -2.54 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 3.175 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 2.54 2.54) (xy 3.175 3.175) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "TIANBO-HJR-4102-L_1_1"
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Transistor_BJT:BC847"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BC847"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NPN Small Signal Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BC847_0_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BC847_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.715)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 135.89 83.82) (xy 139.7 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32618854-8952-44b9-9ad2-cf349cb50b62")
+	)
+	(wire
+		(pts
+			(xy 135.89 86.36) (xy 139.7 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d28f048-3243-48c2-ae82-087539472666")
+	)
+	(wire
+		(pts
+			(xy 135.89 81.28) (xy 135.89 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "814a915f-3d64-4ccb-a2ec-04987ed89a2d")
+	)
+	(wire
+		(pts
+			(xy 120.65 90.17) (xy 138.43 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9615f513-142e-4bac-a1a4-0238211be532")
+	)
+	(wire
+		(pts
+			(xy 138.43 90.17) (xy 138.43 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd0df31-ce81-401f-81ff-43b509110301")
+	)
+	(wire
+		(pts
+			(xy 96.52 68.58) (xy 95.25 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8d2f2b2-e40b-487b-b555-39bda4b60a58")
+	)
+	(wire
+		(pts
+			(xy 138.43 81.28) (xy 139.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e838c5-9110-4194-a63f-3ccf031a561b")
+	)
+	(wire
+		(pts
+			(xy 104.14 68.58) (xy 105.41 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd9ac402-9772-4357-bf8a-21aea080f2b8")
+	)
+	(wire
+		(pts
+			(xy 113.03 73.66) (xy 120.65 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b4c6ea-a6c9-4cdd-bc71-9742f132a5f8")
+	)
+	(wire
+		(pts
+			(xy 120.65 83.82) (xy 120.65 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e517aa4a-5692-433d-b991-a05191d9c5cd")
+	)
+	(hierarchical_label "K1"
+		(shape input)
+		(at 95.25 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b107af97-13c3-43fc-973f-e990ec84c876")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 113.03 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "034b663f-9181-430f-ac76-70bd8fa89377")
+		(property "Reference" "#PWR02"
+			(at 113.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 113.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 113.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2678f53f-e3cf-46e7-aa3a-6554d074fcd0")
+		)
+		(instances
+			(project "pi-relay-board"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "#PWR02")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "#PWR01")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "#PWR03")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "#PWR04")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "#PWR05")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "#PWR06")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "#PWR07")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "#PWR08")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "#PWR09")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08d45392-ddff-4444-b212-ce73674f4ca5")
+		(property "Reference" "R2"
+			(at 100.33 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 100.33 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 100.33 70.358 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 100.33 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c560657-030f-4b7f-a033-5db9c66d7be9")
+		)
+		(pin "1"
+			(uuid "79d18627-fa9a-48e0-ac11-ea928d29f7a6")
+		)
+		(instances
+			(project "pi-relay-board"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "R2")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "R1")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "R3")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "R4")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "R5")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "R6")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "R7")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "R8")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "R9")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:TIANBO-HJR-4102-L")
+		(at 128.27 78.74 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61cc9650-4804-4bc3-a711-54003f611c96")
+		(property "Reference" "K2"
+			(at 128.27 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TIANBO-HJR-4102-L"
+			(at 128.27 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_HJR-4102"
+			(at 127 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-reichelt.de/documents/datenblatt/C300/DS_HJR4102E.pdf"
+			(at 128.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "TIANBO HJR-4102-L, Single Pole Relay, 5mm Pitch, 3A"
+			(at 128.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "b5878659-66a0-42e4-a302-491150c7b035")
+		)
+		(pin "12"
+			(uuid "f104a397-d9de-4b2e-88f7-0d5c98161bc6")
+		)
+		(pin "6"
+			(uuid "f7e10086-5f88-4288-ba5e-b4196c259939")
+		)
+		(pin "8"
+			(uuid "64ec782c-efd5-4b7b-bc3b-374c1efe8f1e")
+		)
+		(pin "7"
+			(uuid "e712244a-7476-471e-aa2e-b6fb7e95547a")
+		)
+		(instances
+			(project "pi-relay-board"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "K2")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "K1")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "K3")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "K4")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "K5")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "K6")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "K7")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "K8")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "K9")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "K10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 144.78 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bd401a1-5657-4f4b-8593-dac484e48552")
+		(property "Reference" "J3"
+			(at 146.05 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 146.05 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88c30c87-4724-4293-b181-20224ca04ebe")
+		)
+		(pin "2"
+			(uuid "fb1cdf90-0302-444e-94fd-d4dcd9630bde")
+		)
+		(pin "3"
+			(uuid "a563b9fd-a7f2-4d6a-b02e-c79bd365f6ac")
+		)
+		(instances
+			(project "pi-relay-board"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "J3")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "J2")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "J4")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "J5")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "J6")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "J7")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "J8")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "J9")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "J10")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC847")
+		(at 110.49 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdea24fe-c882-438c-b025-2059f161964e")
+		(property "Reference" "Q11"
+			(at 115.57 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC847"
+			(at 115.57 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 115.57 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4af7790a-c39b-4569-80c9-7ef4f7ed48c5")
+		)
+		(pin "2"
+			(uuid "bd5fdcaa-918a-4289-af50-1f75d51759ab")
+		)
+		(pin "1"
+			(uuid "bc0427bf-5c62-4518-884c-eea2f1dd4ab0")
+		)
+		(instances
+			(project "pi-relay-board"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "Q11")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "Q12")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "Q13")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "Q14")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "Q15")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "Q16")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "Q17")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "Q18")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "Q19")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "Q20")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
