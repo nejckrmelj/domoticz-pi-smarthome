@@ -660,7 +660,7 @@
 				)
 			)
 		)
-		(symbol "Transistor_BJT:BC847"
+		(symbol "Transistor_BJT:BC547"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
@@ -675,7 +675,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC847"
+			(property "Value" "BC547"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -684,7 +684,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -695,7 +695,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -705,7 +705,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -714,7 +714,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN Small Signal Transistor"
+			(property "ki_keywords" "NPN Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -723,7 +723,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "TO?92*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -732,7 +732,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC847_0_1"
+			(symbol "BC547_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -793,11 +805,11 @@
 					)
 				)
 			)
-			(symbol "BC847_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
+			(symbol "BC547_1_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -812,10 +824,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.08)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -831,9 +843,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "C"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -971,6 +983,22 @@
 			)
 		)
 	)
+	(junction
+		(at 120.65 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd6c154c-d174-4c1a-b326-cd6b33d5eea8")
+	)
+	(wire
+		(pts
+			(xy 120.65 67.31) (xy 120.65 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc678cd-b460-4f7a-a310-c5f6dcc09cf9")
+	)
 	(wire
 		(pts
 			(xy 135.89 83.82) (xy 139.7 83.82)
@@ -990,6 +1018,16 @@
 			(type default)
 		)
 		(uuid "3d28f048-3243-48c2-ae82-087539472666")
+	)
+	(wire
+		(pts
+			(xy 135.89 73.66) (xy 135.89 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42c7e620-644c-4660-bb92-a03dec407965")
 	)
 	(wire
 		(pts
@@ -1071,6 +1109,16 @@
 		)
 		(uuid "e517aa4a-5692-433d-b991-a05191d9c5cd")
 	)
+	(wire
+		(pts
+			(xy 135.89 67.31) (xy 120.65 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6a7cf92-01fa-4525-a019-ee235cc15a18")
+	)
 	(hierarchical_label "K1"
 		(shape input)
 		(at 95.25 68.58 180)
@@ -1082,6 +1130,118 @@
 			(justify right)
 		)
 		(uuid "b107af97-13c3-43fc-973f-e990ec84c876")
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC547")
+		(at 110.49 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00d50cbb-99ce-457e-b2b1-eeb11b826bde")
+		(property "Reference" "Q1"
+			(at 115.57 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 115.57 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 115.57 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "01965768-eccb-4471-af8e-8390e9ea20ce")
+		)
+		(pin "1"
+			(uuid "a8db5b39-7d06-4831-885c-30b9e6a8517b")
+		)
+		(pin "2"
+			(uuid "477e24ea-fc1b-44e9-aedc-d0b18388de63")
+		)
+		(instances
+			(project "pi-relay-board"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "Q1")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "Q2")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "Q3")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "Q4")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "Q5")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "Q6")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "Q7")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "Q8")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "Q9")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -1211,7 +1371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 100.33 70.358 90)
 			(effects
 				(font
@@ -1506,118 +1666,6 @@
 				)
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
 					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC847")
-		(at 110.49 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fdea24fe-c882-438c-b025-2059f161964e")
-		(property "Reference" "Q11"
-			(at 115.57 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847"
-			(at 115.57 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 115.57 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 110.49 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 110.49 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "4af7790a-c39b-4569-80c9-7ef4f7ed48c5")
-		)
-		(pin "2"
-			(uuid "bd5fdcaa-918a-4289-af50-1f75d51759ab")
-		)
-		(pin "1"
-			(uuid "bc0427bf-5c62-4518-884c-eea2f1dd4ab0")
-		)
-		(instances
-			(project "pi-relay-board"
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
-					(reference "Q11")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
-					(reference "Q12")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
-					(reference "Q13")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
-					(reference "Q14")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
-					(reference "Q15")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
-					(reference "Q16")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
-					(reference "Q17")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
-					(reference "Q18")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
-					(reference "Q19")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
-					(reference "Q20")
 					(unit 1)
 				)
 			)

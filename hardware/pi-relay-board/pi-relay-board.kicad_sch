@@ -1145,6 +1145,78 @@
 			)
 		)
 	)
+	(no_connect
+		(at 73.66 88.9)
+		(uuid "1bf738f1-bae9-4780-a8c2-2fa5587e9ebc")
+	)
+	(no_connect
+		(at 114.3 68.58)
+		(uuid "37270fe2-4eae-4ce8-8467-aaa8bbd2e92e")
+	)
+	(no_connect
+		(at 114.3 78.74)
+		(uuid "3bd3e9ba-4777-4730-a554-e88d745e13f8")
+	)
+	(no_connect
+		(at 114.3 109.22)
+		(uuid "3f4e640f-af61-480c-8183-209c1bdd9d36")
+	)
+	(no_connect
+		(at 73.66 71.12)
+		(uuid "44f28898-e54d-4ab1-9c3d-5f3ab59c3d35")
+	)
+	(no_connect
+		(at 114.3 104.14)
+		(uuid "52ef0897-90ff-4c10-84ce-f5b54ef0a8a8")
+	)
+	(no_connect
+		(at 114.3 83.82)
+		(uuid "77be0abe-0e95-444b-90fd-84f4fd98e31b")
+	)
+	(no_connect
+		(at 73.66 91.44)
+		(uuid "78692065-1efb-476a-9c79-6494671e8288")
+	)
+	(no_connect
+		(at 114.3 76.2)
+		(uuid "8333fa7d-fc04-4892-bc2e-f11248c02ad5")
+	)
+	(no_connect
+		(at 114.3 101.6)
+		(uuid "99dba893-dc38-4d21-804c-1a8275e8942a")
+	)
+	(no_connect
+		(at 73.66 68.58)
+		(uuid "a8789a7c-a745-4d05-bc64-8c53a5861ebf")
+	)
+	(no_connect
+		(at 73.66 81.28)
+		(uuid "a8834787-dc14-43a5-911d-12a34fabf922")
+	)
+	(no_connect
+		(at 114.3 111.76)
+		(uuid "b444addc-7c1f-48c7-bb99-71e6754cc056")
+	)
+	(no_connect
+		(at 114.3 99.06)
+		(uuid "cb44afdd-f1e7-4a52-bd6c-134572150bea")
+	)
+	(no_connect
+		(at 114.3 96.52)
+		(uuid "d128ce0e-e68c-45c5-a7e2-a782680cfa9f")
+	)
+	(no_connect
+		(at 114.3 93.98)
+		(uuid "d509cd2f-8668-481c-8f85-f19286c16ec2")
+	)
+	(no_connect
+		(at 73.66 86.36)
+		(uuid "d908905a-6cc9-4b9d-ac55-3a16f011d83a")
+	)
+	(no_connect
+		(at 114.3 71.12)
+		(uuid "f4da4813-0231-46a7-a93e-a61d68df9519")
+	)
 	(wire
 		(pts
 			(xy 68.58 106.68) (xy 68.58 101.6)
@@ -1207,13 +1279,23 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 88.9) (xy 114.3 88.9)
+			(xy 120.65 88.9) (xy 120.65 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4fb3481c-36e0-4e4f-b2a9-62d9ee6e79e3")
+		(uuid "5325840e-0f4f-4626-8917-83e41d846d53")
+	)
+	(wire
+		(pts
+			(xy 120.65 86.36) (xy 120.65 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b92718-b863-4d65-849c-8c08e7df0cb3")
 	)
 	(wire
 		(pts
@@ -1234,16 +1316,6 @@
 			(type default)
 		)
 		(uuid "63ceef17-a9ee-455f-a6bc-55840af4548f")
-	)
-	(wire
-		(pts
-			(xy 124.46 91.44) (xy 118.11 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67c71154-750a-4b59-9f25-ffc6dcce2153")
 	)
 	(wire
 		(pts
@@ -1277,6 +1349,26 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 85.09) (xy 124.46 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fa102fe-79c9-4616-ba2c-3bd37eb70f42")
+	)
+	(wire
+		(pts
+			(xy 114.3 88.9) (xy 120.65 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "737576c2-616b-4624-8a5e-2c46089c5ba3")
+	)
+	(wire
+		(pts
 			(xy 68.58 81.28) (xy 68.58 78.74)
 		)
 		(stroke
@@ -1294,6 +1386,16 @@
 			(type default)
 		)
 		(uuid "81aa958c-ebbf-4861-a28f-fa9a72a1da13")
+	)
+	(wire
+		(pts
+			(xy 114.3 86.36) (xy 120.65 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd8a4cc-8920-4ac8-81af-9012f4a273f5")
 	)
 	(wire
 		(pts
@@ -1327,23 +1429,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 86.36) (xy 124.46 86.36)
+			(xy 120.65 90.17) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af00c6b0-db7d-449d-aeca-393463c32350")
-	)
-	(wire
-		(pts
-			(xy 118.11 91.44) (xy 118.11 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf29ecce-625b-49e3-b871-4fbf3c8db641")
+		(uuid "aaca7109-d7a8-4ac2-b694-771a20b012c1")
 	)
 	(wire
 		(pts
@@ -1387,7 +1479,7 @@
 		(uuid "2a06b1fe-af19-46ba-b3b0-0db34649cbca")
 	)
 	(label "GPIO16"
-		(at 58.42 77.47 0)
+		(at 57.15 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1557,7 +1649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom:Raspberry Connector"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
 			(at 93.98 91.44 0)
 			(effects
 				(font
@@ -1876,7 +1968,7 @@
 		)
 	)
 	(sheet
-		(at 45.72 74.93)
+		(at 44.45 72.39)
 		(size 12.7 5.08)
 		(stroke
 			(width 0.1524)
@@ -1887,7 +1979,7 @@
 		)
 		(uuid "4104c2a8-b10b-4814-8630-4176455720ff")
 		(property "Sheetname" "Relay Pin 3"
-			(at 32.258 77.978 0)
+			(at 30.988 75.438 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1896,7 +1988,7 @@
 			)
 		)
 		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 45.72 80.5946 0)
+			(at 44.45 78.0546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,7 +1998,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 58.42 77.47 0)
+			(at 57.15 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2020,7 +2112,7 @@
 		)
 	)
 	(sheet
-		(at 124.46 88.9)
+		(at 124.46 82.55)
 		(size 12.7 5.08)
 		(stroke
 			(width 0.1524)
@@ -2031,7 +2123,7 @@
 		)
 		(uuid "691f66ce-a9a7-4210-8330-e484efbc945d")
 		(property "Sheetname" "Relay Pin 1"
-			(at 137.922 91.44 0)
+			(at 137.922 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2132,7 @@
 			)
 		)
 		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 124.46 94.5646 0)
+			(at 124.46 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2050,7 +2142,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 124.46 91.44 180)
+			(at 124.46 85.09 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,7 +2256,7 @@
 		)
 	)
 	(sheet
-		(at 124.46 83.82)
+		(at 124.46 87.63)
 		(size 12.7 5.08)
 		(stroke
 			(width 0.1524)
@@ -2175,7 +2267,7 @@
 		)
 		(uuid "e003dbba-e903-4928-939e-ed45384c32ae")
 		(property "Sheetname" "Relay Pin 2"
-			(at 137.668 86.614 0)
+			(at 137.668 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2184,7 +2276,7 @@
 			)
 		)
 		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 124.46 89.4846 0)
+			(at 124.46 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2194,7 +2286,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 124.46 86.36 180)
+			(at 124.46 90.17 180)
 			(effects
 				(font
 					(size 1.27 1.27)
