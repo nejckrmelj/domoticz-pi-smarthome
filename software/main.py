@@ -25,27 +25,30 @@ def update_hardware():
     global hardware
 
     print("Requesting devices from domoticz")
-    response = requests.post(domoticz_api, params={
-        "type": "command",
-        "param": "getdevices"
-    })
-    if (response.ok):
-        json = response.json()
+    try:
+        response = requests.post(domoticz_api, params={
+            "type": "command",
+            "param": "getdevices"
+        })
+        if (response.ok):
+            json = response.json()
 
-        for led in hardware.values():
-            led.close()
+            for led in hardware.values():
+                led.close()
 
-        for device in json["result"]:
-            hardware_name = device["HardwareName"]
-            status = device["Status"]
-            if (device["SwitchType"] == "On/Off" and re.match(r'^GPIO \d+$', hardware_name)):
-                pin = int(hardware_name.split()[1])
-                led = LED(pin)
-                hardware[str(device["HardwareID"])] = led
-                if (status == "On"):
-                    led.on()
-                else:
-                    led.off()  
+            for device in json["result"]:
+                hardware_name = device["HardwareName"]
+                status = device["Status"]
+                if (device["SwitchType"] == "On/Off" and re.match(r'^GPIO \d+$', hardware_name)):
+                    pin = int(hardware_name.split()[1])
+                    led = LED(pin)
+                    hardware[str(device["HardwareID"])] = led
+                    if (status == "On"):
+                        led.on()
+                    else:
+                        led.off()  
+    except Exception as e:
+        print(f"Error: {e}")
                 
 update_hardware()
 print("Used hardware: ", hardware)

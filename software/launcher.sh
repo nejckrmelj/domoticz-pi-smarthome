@@ -21,7 +21,7 @@ fi
 echo "Virtual environment activated successfully."
 
 # Run your Python script
-python reloadable.py mqtt_client.py
+python reloadable.py main.py
 
 # Return to the root directory
 cd /
