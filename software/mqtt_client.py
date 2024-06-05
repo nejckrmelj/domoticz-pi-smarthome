@@ -73,7 +73,7 @@ def on_message(client, userdata, msg):
                         if (hardware_idx not in hardware):
                             update_hardware()
                             if (hardware_idx not in hardware):
-                                raise Exception(f"Switch with hardware idx f{hardware_idx} is missing.")
+                                raise Exception(f"Switch with hardware idx {hardware_idx} is missing.")
 
                         # Switch pin state
                         led = hardware[hardware_idx]

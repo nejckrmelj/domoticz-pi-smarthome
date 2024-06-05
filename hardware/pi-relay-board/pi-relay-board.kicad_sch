@@ -1279,23 +1279,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 88.9) (xy 120.65 90.17)
+			(xy 119.38 88.9) (xy 119.38 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5325840e-0f4f-4626-8917-83e41d846d53")
-	)
-	(wire
-		(pts
-			(xy 120.65 86.36) (xy 120.65 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57b92718-b863-4d65-849c-8c08e7df0cb3")
+		(uuid "51865096-6653-4768-a4d3-2c316183959e")
 	)
 	(wire
 		(pts
@@ -1316,6 +1306,16 @@
 			(type default)
 		)
 		(uuid "63ceef17-a9ee-455f-a6bc-55840af4548f")
+	)
+	(wire
+		(pts
+			(xy 119.38 85.09) (xy 124.46 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6709cd6b-6c1f-4d5f-9953-3f8d35711652")
 	)
 	(wire
 		(pts
@@ -1349,23 +1349,23 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 85.09) (xy 124.46 85.09)
+			(xy 119.38 86.36) (xy 114.3 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6fa102fe-79c9-4616-ba2c-3bd37eb70f42")
+		(uuid "6d3bcce0-42d5-4cc8-860e-034fa61d243b")
 	)
 	(wire
 		(pts
-			(xy 114.3 88.9) (xy 120.65 88.9)
+			(xy 119.38 85.09) (xy 119.38 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "737576c2-616b-4624-8a5e-2c46089c5ba3")
+		(uuid "748dcaaf-6c22-407d-b776-5515272ebf36")
 	)
 	(wire
 		(pts
@@ -1386,16 +1386,6 @@
 			(type default)
 		)
 		(uuid "81aa958c-ebbf-4861-a28f-fa9a72a1da13")
-	)
-	(wire
-		(pts
-			(xy 114.3 86.36) (xy 120.65 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dd8a4cc-8920-4ac8-81af-9012f4a273f5")
 	)
 	(wire
 		(pts
@@ -1429,13 +1419,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 90.17) (xy 124.46 90.17)
+			(xy 114.3 88.9) (xy 119.38 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aaca7109-d7a8-4ac2-b694-771a20b012c1")
+		(uuid "c5c725c8-ffee-4d1f-865e-e173c848908e")
 	)
 	(wire
 		(pts
@@ -1466,6 +1456,16 @@
 			(type default)
 		)
 		(uuid "e41681e9-09a5-486f-bedf-d52b8d832f36")
+	)
+	(wire
+		(pts
+			(xy 119.38 90.17) (xy 124.46 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8f70696-4fa0-42e2-9ab5-4d16d578e299")
 	)
 	(label "GPIO16"
 		(at 73.66 76.2 180)
@@ -1901,7 +1901,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 106.68 0)
 			(effects
 				(font
@@ -1949,7 +1949,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 101.6 0)
 			(effects
 				(font
@@ -1997,7 +1997,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 57.15 74.93 0)
 			(effects
 				(font
@@ -2005,7 +2005,7 @@
 				)
 				(justify right)
 			)
-			(uuid "52c9df78-00c0-47d7-990b-6eed01431d4c")
+			(uuid "178f7b7e-70b9-4da3-9d9b-6eeb5734b171")
 		)
 		(instances
 			(project "pi-relay-board"
@@ -2045,7 +2045,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 81.28 0)
 			(effects
 				(font
@@ -2093,7 +2093,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 96.52 0)
 			(effects
 				(font
@@ -2112,7 +2112,7 @@
 		)
 	)
 	(sheet
-		(at 124.46 82.55)
+		(at 124.46 87.63)
 		(size 12.7 5.08)
 		(stroke
 			(width 0.1524)
@@ -2122,8 +2122,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "691f66ce-a9a7-4210-8330-e484efbc945d")
-		(property "Sheetname" "Relay Pin 1"
-			(at 137.922 85.09 0)
+		(property "Sheetname" "Relay Pin 2"
+			(at 137.922 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,7 +2132,7 @@
 			)
 		)
 		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 124.46 88.2146 0)
+			(at 124.46 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2141,8 +2141,8 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
-			(at 124.46 85.09 180)
+		(pin "K" input
+			(at 124.46 90.17 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2189,7 +2189,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 116.84 0)
 			(effects
 				(font
@@ -2237,7 +2237,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 111.76 0)
 			(effects
 				(font
@@ -2256,7 +2256,7 @@
 		)
 	)
 	(sheet
-		(at 124.46 87.63)
+		(at 124.46 82.55)
 		(size 12.7 5.08)
 		(stroke
 			(width 0.1524)
@@ -2266,8 +2266,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "e003dbba-e903-4928-939e-ed45384c32ae")
-		(property "Sheetname" "Relay Pin 2"
-			(at 137.668 90.424 0)
+		(property "Sheetname" "Relay Pin 1"
+			(at 137.668 85.344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,7 +2276,7 @@
 			)
 		)
 		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 124.46 93.2946 0)
+			(at 124.46 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2285,8 +2285,8 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
-			(at 124.46 90.17 180)
+		(pin "K" input
+			(at 124.46 85.09 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2333,7 +2333,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO" input
+		(pin "K" input
 			(at 66.04 121.92 0)
 			(effects
 				(font

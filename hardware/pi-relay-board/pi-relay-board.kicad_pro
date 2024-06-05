@@ -481,7 +481,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "plot",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -595,11 +595,11 @@
     ],
     [
       "691f66ce-a9a7-4210-8330-e484efbc945d",
-      "Relay Pin 1"
+      "Relay Pin 2"
     ],
     [
       "e003dbba-e903-4928-939e-ed45384c32ae",
-      "Relay Pin 2"
+      "Relay Pin 1"
     ],
     [
       "4104c2a8-b10b-4814-8630-4176455720ff",
