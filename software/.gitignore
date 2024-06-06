@@ -1,4 +1,4 @@
 .env
-.venv/
+*.venv/
 domoticz/domoticz.db
 mosquitto/passwd
