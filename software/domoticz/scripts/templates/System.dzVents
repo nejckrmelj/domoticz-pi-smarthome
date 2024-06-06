@@ -1,0 +1,19 @@
+return {
+	on = {
+		system = {
+			'start',
+			'stop',
+			'manualBackupFinished',
+            'dailyBackupFinished',
+            'hourlyBackupFinished',
+            'monthlyBackupFinished',
+		},
+	},
+	logging = {
+		level = domoticz.LOG_INFO,
+		marker = 'template',
+	},
+	execute = function(domoticz, triggeredItem)
+		domoticz.log('Domoticz has started')
+	end
+}

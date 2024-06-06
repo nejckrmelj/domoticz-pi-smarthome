@@ -1,2 +1,4 @@
 .env
 .venv/
+domoticz/domoticz.db
+mosquitto/passwd

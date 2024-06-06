@@ -47,9 +47,12 @@ def update_hardware():
                     if (status == "On"):
                         led.on()
                     else:
-                        led.off()  
+                        led.off()
+        else:
+            raise Exception(f"Request failed: {response.status_code}, api: {response.url}")
+         
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Update Hardware Error: {e}")
                 
 update_hardware()
 print("Used hardware: ", hardware)
@@ -72,7 +75,6 @@ def on_message(client, userdata, msg):
 
                     case "On/Off":
                         hardware_idx = data["hwid"]
-                        print(hardware_idx not in hardware)
                         # Check if hardware gpio is initialized
                         if (hardware_idx not in hardware):
                             update_hardware()
@@ -106,8 +108,6 @@ mqttc.on_disconnect = on_disconnect
 mqttc.username_pw_set(mqtt_username, mqtt_password)
 # Connect to broker
 try:
-    print(mqtt_host)
-    print(mqtt_port)
     mqttc.connect(mqtt_host, mqtt_port, 60)
 except Exception as e:
     print(f"Connection with broker failed: {e}")
