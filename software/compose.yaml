@@ -8,11 +8,30 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 services:
-  server:
-    build:
-      context: .
+  mosquitto:
+    image: eclipse-mosquitto
+    hostname: mosquitto
+    container_name: mosquitto
+    # restart: always
     ports:
-      # - 8000:8000
+      - "1883:1883" #default mqtt port
+      - "9001:9001" #default mqtt port for websockets
+    volumes:
+      - ./mosquitto:/mosquitto/config:rw
+      - ./mosquitto:/etc/mosquitto
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+  # client:
+  #   container_name: mqtt-client
+  #   restart: no
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.client
+  #   env_file: .env
+  #   ports:
+  #     - 80:80
+
+  # - 1883:1883
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
 # start the database before your application. The `db-data` volume persists the
