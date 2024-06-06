@@ -35,14 +35,14 @@ services:
     networks:
       - mqtt-network
 
-  client:
-    container_name: mqtt-client
+  hardware-client:
+    container_name: hardware-client
     depends_on:
       - mosquitto
     # restart: no
     build:
-      context: .
-      dockerfile: Dockerfile.client
+      context: ./hardware-client
+      dockerfile: Dockerfile
     env_file: .env
     ports:
       - 80:80
