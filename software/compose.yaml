@@ -46,6 +46,5 @@ services:
     env_file: .env
     ports:
       - 80:80
-      - 8888:8888
     networks:
       - mqtt-network
