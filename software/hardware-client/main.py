@@ -17,7 +17,6 @@ domoticz_username = os.getenv("DOMOTICZ_USERNAME")
 domoticz_password = os.getenv("DOMOTICZ_PASSWORD")
 domoticz_host = os.getenv("DOMOTICZ_HOST")
 domoticz_api = f"http://{domoticz_username}:{domoticz_password}@{domoticz_host}/json.htm"
-print(domoticz_api)
 
 # Get hardware with gpios from domoticz
 hardware = {}
@@ -25,7 +24,7 @@ hardware = {}
 def update_hardware():
     global hardware
 
-    print("Requesting devices from domoticz")
+    print(f"Requesting devices from domoticz: {domoticz_api}")
     try:
         response = requests.post(domoticz_api, params={
             "type": "command",
@@ -108,6 +107,7 @@ mqttc.on_disconnect = on_disconnect
 mqttc.username_pw_set(mqtt_username, mqtt_password)
 # Connect to broker
 try:
+    print(f"Connecting to broker {mqtt_host}:{mqtt_port}")
     mqttc.connect(mqtt_host, mqtt_port, 60)
 except Exception as e:
     print(f"Connection with broker failed: {e}")
