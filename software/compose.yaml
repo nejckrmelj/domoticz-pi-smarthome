@@ -37,12 +37,12 @@ services:
 
   hardware-client:
     container_name: hardware-client
-    depends_on:
-      - domoticz
-    restart: on-failure:5
     build:
       context: ./hardware-client
       dockerfile: Dockerfile
+    depends_on:
+      - domoticz
+    restart: on-failure:5
     env_file: .env
     ports:
       - 80:80
