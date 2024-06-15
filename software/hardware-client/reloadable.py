@@ -1,3 +1,5 @@
+# https://medium.com/@jnavarr56/use-file-watching-and-subprocesses-to-develop-python-scripts-with-live-reloading-9ffaa66fd648
+
 from watchdog.observers import Observer
 from watchdog.events import FileModifiedEvent, PatternMatchingEventHandler
 from threading import Timer
