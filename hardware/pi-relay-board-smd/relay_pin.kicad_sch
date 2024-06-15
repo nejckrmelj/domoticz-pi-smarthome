@@ -5,21 +5,21 @@
 	(uuid "4f8fd784-57d6-4b7b-8405-eca74c913452")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Socket"
+		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Socket"
+			(property "Value" "Conn_01x03_Socket"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -45,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,7 +80,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_Socket_1_1"
+			(symbol "Conn_01x03_Socket_1_1"
 				(arc
 					(start 0 -2.032)
 					(mid -0.5058 -2.54)
@@ -117,6 +117,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(arc
 					(start 0 0.508)
 					(mid -0.5058 0)
@@ -129,8 +141,20 @@
 						(type none)
 					)
 				)
+				(arc
+					(start 0 3.048)
+					(mid -0.5058 2.54)
+					(end 0 2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -148,7 +172,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -158,6 +182,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1037,13 +1079,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 91.44) (xy 139.7 88.9)
+			(xy 137.16 83.82) (xy 139.7 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "095e02b2-3a13-413b-ae07-b4c627e8ee91")
+		(uuid "23f72094-a7c2-4e77-bf65-a42bd1050573")
 	)
 	(wire
 		(pts
@@ -1057,13 +1099,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 91.44) (xy 120.65 91.44)
+			(xy 137.16 90.17) (xy 137.16 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "64e77b2c-d38f-4c2c-8bf3-6edcf7a66d6e")
+		(uuid "4526bf5e-cbb1-458b-9aca-1cd7ea1082ab")
 	)
 	(wire
 		(pts
@@ -1074,6 +1116,26 @@
 			(type default)
 		)
 		(uuid "68778a91-0833-404c-91a0-85fc03107837")
+	)
+	(wire
+		(pts
+			(xy 135.89 81.28) (xy 139.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1560ad3-6bcd-484d-8c47-53f77e178fee")
+	)
+	(wire
+		(pts
+			(xy 120.65 90.17) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0447ea5-877a-4a4e-a3d3-268e9be3787a")
 	)
 	(wire
 		(pts
@@ -1107,7 +1169,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 83.82) (xy 120.65 91.44)
+			(xy 120.65 83.82) (xy 120.65 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1155,7 +1217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 115.57 70.485 0)
 			(effects
 				(font
@@ -1195,7 +1257,7 @@
 			(uuid "477e24ea-fc1b-44e9-aedc-d0b18388de63")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
 					(reference "Q1")
 					(unit 1)
@@ -1297,7 +1359,7 @@
 			(uuid "2678f53f-e3cf-46e7-aa3a-6554d074fcd0")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
 					(reference "#PWR02")
 					(unit 1)
@@ -1367,7 +1429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 100.33 70.358 90)
 			(effects
 				(font
@@ -1401,7 +1463,7 @@
 			(uuid "79d18627-fa9a-48e0-ac11-ea928d29f7a6")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
 					(reference "R2")
 					(unit 1)
@@ -1514,7 +1576,7 @@
 			(uuid "e712244a-7476-471e-aa2e-b6fb7e95547a")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
 					(reference "K2")
 					(unit 1)
@@ -1553,6 +1615,115 @@
 				)
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
 					(reference "K10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 144.78 83.82 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bd401a1-5657-4f4b-8593-dac484e48552")
+		(property "Reference" "J3"
+			(at 146.05 85.0901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 146.05 82.5501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88c30c87-4724-4293-b181-20224ca04ebe")
+		)
+		(pin "2"
+			(uuid "fb1cdf90-0302-444e-94fd-d4dcd9630bde")
+		)
+		(pin "3"
+			(uuid "a563b9fd-a7f2-4d6a-b02e-c79bd365f6ac")
+		)
+		(instances
+			(project "pi-relay-board-smd"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
+					(reference "J3")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
+					(reference "J2")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
+					(reference "J4")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
+					(reference "J5")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
+					(reference "J6")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
+					(reference "J7")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
+					(reference "J8")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
+					(reference "J9")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
+					(reference "J10")
+					(unit 1)
+				)
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -1616,7 +1787,7 @@
 			(uuid "1aef7347-7cb5-4822-aaff-5bff2f6a8fe2")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
 					(reference "#PWR019")
 					(unit 1)
@@ -1655,112 +1826,6 @@
 				)
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 144.78 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9c719d1-8842-412d-aba1-e1f3e52bb197")
-		(property "Reference" "J18"
-			(at 146.05 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 146.05 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fcfc416c-5ce7-498a-8d85-a026aa72cbce")
-		)
-		(pin "1"
-			(uuid "297dcbe4-48ec-4d24-abc5-933c442a0efa")
-		)
-		(instances
-			(project "pi-relay-board"
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/118fbb03-b0f5-4e81-9827-73e518015949"
-					(reference "J18")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/691f66ce-a9a7-4210-8330-e484efbc945d"
-					(reference "J12")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e003dbba-e903-4928-939e-ed45384c32ae"
-					(reference "J13")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4104c2a8-b10b-4814-8630-4176455720ff"
-					(reference "J14")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/4160e499-e228-48ff-bf19-fbbc4f79d536"
-					(reference "J15")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/57158c3d-53e9-4aea-9df5-f221bf193187"
-					(reference "J16")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/1516f555-b572-405c-8e26-5409c4128995"
-					(reference "J17")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/a3c9cc38-888b-4558-9948-ff007dba1d89"
-					(reference "J19")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/85065515-af0d-46e8-9ec7-79bcf82b83a9"
-					(reference "J20")
-					(unit 1)
-				)
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff/e35df33e-9fd4-4492-8686-e97c7371f93f"
-					(reference "J21")
 					(unit 1)
 				)
 			)

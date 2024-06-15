@@ -1219,47 +1219,37 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 99.06) (xy 73.66 99.06)
+			(xy 68.58 106.68) (xy 68.58 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "075dd2db-c65a-4a73-a976-dfd0b24a834d")
+		(uuid "00a463a6-6597-4975-938f-c3bd3b5822de")
 	)
 	(wire
 		(pts
-			(xy 71.12 86.36) (xy 71.12 96.52)
+			(xy 72.39 109.22) (xy 73.66 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "22ac3321-c33f-47a2-99b2-1984b7a6268f")
+		(uuid "12a4aa06-0ed8-442f-877b-5d7627f62f89")
 	)
 	(wire
 		(pts
-			(xy 69.85 91.44) (xy 69.85 99.06)
+			(xy 71.12 106.68) (xy 73.66 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26f39f2d-faa4-472f-93c2-8fa0b7dc8759")
+		(uuid "22b1e20e-4056-4190-8fba-b84048b2b68f")
 	)
 	(wire
 		(pts
-			(xy 66.04 96.52) (xy 68.58 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "377c566d-2b1d-42e9-9495-54a770d63dfc")
-	)
-	(wire
-		(pts
-			(xy 66.04 76.2) (xy 73.66 76.2)
+			(xy 66.04 81.28) (xy 68.58 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1269,13 +1259,23 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 81.28) (xy 71.12 81.28)
+			(xy 71.12 116.84) (xy 71.12 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e2a99b5-d351-41b8-9304-25369f755aee")
+		(uuid "3f930e26-e3c5-41f5-83b1-7028f8bde94d")
+	)
+	(wire
+		(pts
+			(xy 66.04 101.6) (xy 67.31 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ffc0403-039f-48da-b3c1-8ac65a979571")
 	)
 	(wire
 		(pts
@@ -1289,33 +1289,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 81.28) (xy 71.12 78.74)
+			(xy 66.04 111.76) (xy 69.85 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c071f2a-e9c6-4167-9dac-94d15f165fd9")
+		(uuid "5ae6c87d-eb6e-47b4-8d46-db3f3d99ea4f")
 	)
 	(wire
 		(pts
-			(xy 66.04 91.44) (xy 69.85 91.44)
+			(xy 66.04 106.68) (xy 68.58 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "63ceef17-a9ee-455f-a6bc-55840af4548f")
-	)
-	(wire
-		(pts
-			(xy 67.31 109.22) (xy 73.66 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63e54b10-6997-4fe3-8d2a-e9b6011e7d12")
 	)
 	(wire
 		(pts
@@ -1329,33 +1319,33 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 78.74) (xy 73.66 78.74)
+			(xy 72.39 121.92) (xy 72.39 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "674e301d-262c-467a-8e5b-5dec0c61a44d")
+		(uuid "6837d0e1-d393-4f9c-8618-1acb57c53e66")
 	)
 	(wire
 		(pts
-			(xy 67.31 104.14) (xy 73.66 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "682f1c86-d5ac-40d9-a8c3-ad2a7164cdd1")
-	)
-	(wire
-		(pts
-			(xy 66.04 86.36) (xy 71.12 86.36)
+			(xy 66.04 121.92) (xy 72.39 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "69f20897-ffaa-41f9-a107-47774de26ff7")
+	)
+	(wire
+		(pts
+			(xy 69.85 104.14) (xy 73.66 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6be50070-2c54-48e5-aa1e-df50e9a096ca")
 	)
 	(wire
 		(pts
@@ -1379,43 +1369,53 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 101.6) (xy 67.31 104.14)
+			(xy 68.58 81.28) (xy 68.58 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ad09e64-0656-4200-8a5a-9ebb9c49ea99")
+		(uuid "77a13c05-a144-4a0c-a475-1dfd24bfdd90")
 	)
 	(wire
 		(pts
-			(xy 67.31 111.76) (xy 67.31 109.22)
+			(xy 69.85 111.76) (xy 69.85 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c5e5273-108e-41c9-81e8-dde5913d7be4")
+		(uuid "81aa958c-ebbf-4861-a28f-fa9a72a1da13")
 	)
 	(wire
 		(pts
-			(xy 68.58 96.52) (xy 68.58 101.6)
+			(xy 67.31 101.6) (xy 67.31 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b4294db-40c6-4621-9621-611540a7e472")
+		(uuid "9640dbc8-1ae1-4038-b7a5-637921d5dcb8")
 	)
 	(wire
 		(pts
-			(xy 66.04 106.68) (xy 73.66 106.68)
+			(xy 68.58 78.74) (xy 73.66 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be1c5973-5db3-4fe9-85fa-0f6bc765fa1d")
+		(uuid "96d2df12-6f44-4d2c-877b-6e3903f857f5")
+	)
+	(wire
+		(pts
+			(xy 68.58 101.6) (xy 73.66 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8ab4d1-0cd6-4913-a8a8-bfcb4651dc5c")
 	)
 	(wire
 		(pts
@@ -1429,7 +1429,27 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 111.76) (xy 67.31 111.76)
+			(xy 67.31 99.06) (xy 73.66 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de73e7fb-dd2d-498e-9289-8b08f17c24d6")
+	)
+	(wire
+		(pts
+			(xy 66.04 96.52) (xy 73.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1f84232-4031-4d05-86dd-f1cd72514f11")
+	)
+	(wire
+		(pts
+			(xy 66.04 116.84) (xy 71.12 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1447,35 +1467,27 @@
 		)
 		(uuid "e8f70696-4fa0-42e2-9ab5-4d16d578e299")
 	)
-	(wire
-		(pts
-			(xy 68.58 101.6) (xy 73.66 101.6)
+	(label "GPIO16"
+		(at 73.66 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9bae410-6cfe-41b2-866d-863c5e117c33")
+		(uuid "2a06b1fe-af19-46ba-b3b0-0db34649cbca")
 	)
-	(wire
-		(pts
-			(xy 71.12 96.52) (xy 73.66 96.52)
+	(label "GPIO16"
+		(at 57.15 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8efd58f-fffa-435e-9da6-01a14c8ec820")
-	)
-	(wire
-		(pts
-			(xy 66.04 101.6) (xy 67.31 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe545815-e1e1-496f-95a0-2e22ed044137")
+		(uuid "48abad11-d460-474a-8602-34388a3d9184")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -1535,7 +1547,7 @@
 			(uuid "4f5be5f2-a973-4943-9bbf-8cd27378e625")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(reference "#PWR011")
 					(unit 1)
@@ -1601,7 +1613,7 @@
 			(uuid "d54b5ba8-dae9-4e37-8a92-55bbe6565e4b")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(reference "#PWR012")
 					(unit 1)
@@ -1637,7 +1649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD"
 			(at 93.98 91.44 0)
 			(effects
 				(font
@@ -1785,7 +1797,7 @@
 			(uuid "c79cef74-4aec-4711-a0ce-454be4e0ab95")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(reference "J1")
 					(unit 1)
@@ -1851,106 +1863,10 @@
 			(uuid "21206dd7-54a8-4822-8691-1bf0726ebb1b")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(reference "#PWR013")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 53.34 88.9)
-		(size 12.7 5.08)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "118fbb03-b0f5-4e81-9827-73e518015949")
-		(property "Sheetname" "Relay Pin 7"
-			(at 40.132 92.202 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 53.34 94.5646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "K" input
-			(at 66.04 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4b81d847-d462-4c9d-86aa-d3bca8ef1351")
-		)
-		(instances
-			(project "pi-relay-board"
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 53.34 93.98)
-		(size 12.7 5.08)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "1516f555-b572-405c-8e26-5409c4128995")
-		(property "Sheetname" "Relay Pin 6"
-			(at 40.132 97.282 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 53.34 99.6446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "K" input
-			(at 66.04 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f9ba4ca0-5190-46cf-bc2c-d7bee4900099")
-		)
-		(instances
-			(project "pi-relay-board"
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
-					(page "7")
 				)
 			)
 		)
@@ -1965,9 +1881,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "4104c2a8-b10b-4814-8630-4176455720ff")
-		(property "Sheetname" "Relay Pin 3"
-			(at 39.878 107.188 0)
+		(uuid "118fbb03-b0f5-4e81-9827-73e518015949")
+		(property "Sheetname" "Relay Pin 7"
+			(at 40.132 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1993,60 +1909,12 @@
 				)
 				(justify right)
 			)
-			(uuid "178f7b7e-70b9-4da3-9d9b-6eeb5734b171")
+			(uuid "4b81d847-d462-4c9d-86aa-d3bca8ef1351")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 53.34 73.66)
-		(size 12.7 5.08)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "4160e499-e228-48ff-bf19-fbbc4f79d536")
-		(property "Sheetname" "Relay Pin 4"
-			(at 39.878 76.962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 53.34 79.3246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "K" input
-			(at 66.04 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4f50e24a-5270-4884-b423-2a8e8b581b4e")
-		)
-		(instances
-			(project "pi-relay-board"
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
-					(page "5")
+					(page "8")
 				)
 			)
 		)
@@ -2061,9 +1929,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "57158c3d-53e9-4aea-9df5-f221bf193187")
-		(property "Sheetname" "Relay Pin 5"
-			(at 39.878 102.108 0)
+		(uuid "1516f555-b572-405c-8e26-5409c4128995")
+		(property "Sheetname" "Relay Pin 6"
+			(at 40.132 102.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2089,10 +1957,154 @@
 				)
 				(justify right)
 			)
+			(uuid "f9ba4ca0-5190-46cf-bc2c-d7bee4900099")
+		)
+		(instances
+			(project "pi-relay-board-smd"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 72.39)
+		(size 12.7 5.08)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4104c2a8-b10b-4814-8630-4176455720ff")
+		(property "Sheetname" "Relay Pin 3"
+			(at 30.988 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relay_pin.kicad_sch"
+			(at 44.45 78.0546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "K" input
+			(at 57.15 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "178f7b7e-70b9-4da3-9d9b-6eeb5734b171")
+		)
+		(instances
+			(project "pi-relay-board-smd"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 53.34 78.74)
+		(size 12.7 5.08)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4160e499-e228-48ff-bf19-fbbc4f79d536")
+		(property "Sheetname" "Relay Pin 4"
+			(at 39.878 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relay_pin.kicad_sch"
+			(at 53.34 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "K" input
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4f50e24a-5270-4884-b423-2a8e8b581b4e")
+		)
+		(instances
+			(project "pi-relay-board-smd"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 53.34 93.98)
+		(size 12.7 5.08)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "57158c3d-53e9-4aea-9df5-f221bf193187")
+		(property "Sheetname" "Relay Pin 5"
+			(at 39.878 97.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relay_pin.kicad_sch"
+			(at 53.34 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "K" input
+			(at 66.04 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 			(uuid "f9b92931-e958-4b64-92a0-5303fd022c97")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(page "6")
 				)
@@ -2140,9 +2152,57 @@
 			(uuid "90226f96-fc5b-4aca-83af-95d08a8a79f7")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 53.34 114.3)
+		(size 12.7 5.08)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "85065515-af0d-46e8-9ec7-79bcf82b83a9")
+		(property "Sheetname" "Relay Pin 9"
+			(at 40.132 117.602 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relay_pin.kicad_sch"
+			(at 53.34 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "K" input
+			(at 66.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "92a414f5-9a4e-4c18-aaf2-7d9e551be234")
+		)
+		(instances
+			(project "pi-relay-board-smd"
+				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
+					(page "10")
 				)
 			)
 		)
@@ -2157,8 +2217,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "85065515-af0d-46e8-9ec7-79bcf82b83a9")
-		(property "Sheetname" "Relay Pin 9"
+		(uuid "a3c9cc38-888b-4558-9948-ff007dba1d89")
+		(property "Sheetname" "Relay Pin 8"
 			(at 40.132 112.522 0)
 			(effects
 				(font
@@ -2185,58 +2245,10 @@
 				)
 				(justify right)
 			)
-			(uuid "92a414f5-9a4e-4c18-aaf2-7d9e551be234")
-		)
-		(instances
-			(project "pi-relay-board"
-				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
-					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 53.34 78.74)
-		(size 12.7 5.08)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "a3c9cc38-888b-4558-9948-ff007dba1d89")
-		(property "Sheetname" "Relay Pin 8"
-			(at 40.132 82.042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 53.34 84.4046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "K" input
-			(at 66.04 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
 			(uuid "5d06aa60-777f-41b8-94ad-0bd5c6d7bd20")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(page "9")
 				)
@@ -2284,7 +2296,7 @@
 			(uuid "ac180da2-d8e4-4514-bc8a-e1dc3ad2fc16")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(page "3")
 				)
@@ -2292,7 +2304,7 @@
 		)
 	)
 	(sheet
-		(at 53.34 83.82)
+		(at 53.34 119.38)
 		(size 12.7 5.08)
 		(stroke
 			(width 0.1524)
@@ -2303,7 +2315,7 @@
 		)
 		(uuid "e35df33e-9fd4-4492-8686-e97c7371f93f")
 		(property "Sheetname" "Relay Pin 10"
-			(at 40.132 87.122 0)
+			(at 40.132 122.682 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2312,7 +2324,7 @@
 			)
 		)
 		(property "Sheetfile" "relay_pin.kicad_sch"
-			(at 53.34 89.4846 0)
+			(at 53.34 125.0446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2322,7 +2334,7 @@
 			)
 		)
 		(pin "K" input
-			(at 66.04 86.36 0)
+			(at 66.04 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +2344,7 @@
 			(uuid "6a845bb0-1993-454d-a631-46840c89de9e")
 		)
 		(instances
-			(project "pi-relay-board"
+			(project "pi-relay-board-smd"
 				(path "/d2fef91f-5840-4773-b01e-415a95bac3ff"
 					(page "11")
 				)
