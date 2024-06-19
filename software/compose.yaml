@@ -4,17 +4,17 @@ networks:
 
 services:
   mosquitto:
+    build:
+      context: ./mosquitto
+      dockerfile: Dockerfile
     image: eclipse-mosquitto
     hostname: mosquitto
     container_name: mosquitto
-    restart: always
+    restart: on-failure:5
+    env_file: .env
     ports:
       - 1883:1883 #default mqtt port
       - 9001:9001 #default mqtt port for websockets
-    volumes:
-      - ./mosquitto:/mosquitto/config:rw
-      - ./mosquitto:/etc/mosquitto
-      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
     networks:
       - mqtt-network
 
@@ -22,7 +22,7 @@ services:
     image: domoticz/domoticz:stable
     hostname: domoticz
     container_name: domoticz
-    restart: always
+    restart: on-failure:5
     depends_on:
       - mosquitto
     ports:
@@ -40,9 +40,9 @@ services:
     build:
       context: ./hardware-client
       dockerfile: Dockerfile
+    restart: on-failure:5
     depends_on:
       - domoticz
-    restart: on-failure:5
     env_file: .env
     ports:
       - 80:80

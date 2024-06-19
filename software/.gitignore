@@ -2,4 +2,4 @@
 *.venv/
 domoticz/domoticz.db
 domoticz/domocookie.txt
-mosquitto/passwd*
+mosquitto/passwordfile*
