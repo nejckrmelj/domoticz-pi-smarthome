@@ -1,5 +1,5 @@
 .env
 *.venv/
-domoticz/domoticz.db
+domoticz/domoticz.db*
 domoticz/domocookie.txt
 mosquitto/passwordfile*
