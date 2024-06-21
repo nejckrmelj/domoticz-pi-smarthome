@@ -22,7 +22,7 @@ services:
     image: domoticz/domoticz:stable
     hostname: domoticz
     container_name: domoticz
-    restart: on-failure:5
+    restart: always
     depends_on:
       - mosquitto
     ports:

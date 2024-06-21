@@ -16,7 +16,7 @@ mqtt_password = os.getenv("MQTT_PASSWORD")
 domoticz_username = os.getenv("DOMOTICZ_USERNAME")
 domoticz_password = os.getenv("DOMOTICZ_PASSWORD")
 domoticz_host = os.getenv("DOMOTICZ_HOST")
-domoticz_api = f"http://{domoticz_username}:{domoticz_password}@{domoticz_host}/json.htm"
+domoticz_api = f"https://{domoticz_username}:{domoticz_password}@{domoticz_host}/json.htm"
 
 # Get hardware with gpios from domoticz
 hardware = {}
@@ -26,7 +26,7 @@ def update_hardware():
 
     print(f"Requesting devices from domoticz: {domoticz_api}")
     try:
-        response = requests.post(domoticz_api, params={
+        response = requests.post(domoticz_api, verify=False, params={
             "type": "command",
             "param": "getdevices"
         })
@@ -60,6 +60,7 @@ def on_connect(client, userdata, flags, rc, properties):
     print(f"Connected with result code {rc}")
     client.subscribe("domoticz/out")
 
+# Handle incoming messages
 def on_message(client, userdata, msg):
     data = json.loads(msg.payload)
 

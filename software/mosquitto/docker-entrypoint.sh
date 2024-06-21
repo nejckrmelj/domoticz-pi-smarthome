@@ -14,7 +14,7 @@ if ( [ -z "${MQTT_USERNAME}" ] || [ -z "${MQTT_PASSWORD}" ] ); then
   exit 1
 fi
 
-# create mosquitto passwordfile
+# create mosquitto password file
 echo "Adding user $MQTT_USERNAME"
 touch passwordfile
 chown mosquitto /passwordfile
