@@ -12,9 +12,11 @@ This repository is a software and hardware source for a smart home project I was
 
 ## Local Setup
 
-To run this software locally, follow these steps:
+Before you start, you need to have a remote GPIO access enabled on your Raspberry Pi (enable it in `sudo raspi-config` settings and with `sudo systemctl enable pigpiod` on your Pi).
 
-1. Clone this repository `git clone [repo url]`
+To run this repo locally, follow these steps:
+
+1. Clone repository `git clone [repo url]`
 
 2. Move to the software directory `cd software`
 
@@ -32,10 +34,10 @@ To run this software locally, follow these steps:
 
 ### Clone Repo With Git Sparse Checkout
 
-To clone only specific folder (e.g. on the Rapsberry Pi you only need a software folder) use git sparse checkout
+To clone only specific folder (e.g. on the Rapsberry Pi you only need a software folder) use git sparse: checkout
 
 1. Init repository localy with `git init` and `git remote add origin [repo url]`
 
 2. Init git sparse checkout `git sparse-checkout init --cone`
 
-3. Specify folder to pull with `git sparse-checkout set [folder name]`
+3. Specify folder to pull `git sparse-checkout set [folder name]`
