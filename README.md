@@ -10,7 +10,7 @@ This repository is a software and hardware source for a smart home project I was
 - **MQTT**
 - **Docker**
 
-## Local setup
+## Local Setup
 
 To run this software locally, follow these steps:
 
@@ -29,3 +29,13 @@ To run this software locally, follow these steps:
 7. Add new hardware for every useful GPIO on the Raspberry Pi with name _GPIO [pin number]_ and type _Dummy (Does nothing, use for virtual switches only_
 
 8. Add switches with hardware _GPIO [pin number]_ with any type and name
+
+### Clone Repo With Git Sparse Checkout
+
+To clone only specific folder (e.g. on the Rapsberry Pi you only need a software folder) use git sparse checkout
+
+1. Init repository localy with `git init` and `git remote add origin [repo url]`
+
+2. Init git sparse checkout `git sparse-checkout init --cone`
+
+3. Specify folder to pull with `git sparse-checkout set [folder name]`
